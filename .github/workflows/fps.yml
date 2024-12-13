@@ -23,4 +23,4 @@ jobs:
       - name: action
         run: |
           docker run -d -p 8080:80 -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc
-          ssh -o StrictHostKeyChecking=no -R 80:localhost:8080 localhost.run
+          ssh -o StrictHostKeyChecking=no -R 80:localhost:8080 nokey@localhost.run
